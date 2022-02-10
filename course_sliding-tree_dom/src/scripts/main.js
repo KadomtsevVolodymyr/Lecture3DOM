@@ -1,6 +1,6 @@
 'use strict';
 
-const tree = document.getElementById('tree');
+const tree = document.querySelector('.tree');
 
 for (const li of tree.querySelectorAll('li')) {
   const span = document.createElement('span');

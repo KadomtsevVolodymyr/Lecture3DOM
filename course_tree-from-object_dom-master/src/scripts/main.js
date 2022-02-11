@@ -19,21 +19,20 @@ const food = {
   },
 };
 
-
 function createTree(container, data) {
-   const ul = container.appendChild(document.createElement('ul'));
+  const ul = container.appendChild(document.createElement('ul'));
 
-   for (const [key, val] of Object.entries(data)) {
+  for (const [key, val] of Object.entries(data)) {
 
-     const li = ul.appendChild(document.createElement('li'));
+    const li = ul.appendChild(document.createElement('li'));
 
-     li.textContent = key;
+    li.textContent = key;
      
-     if (Object.keys(val).length) {
+    if (Object.keys(val).length) {
 
-       createTree(li, val);
-     }
-   }
- }
+      createTree(li, val);
+    }
+  }
+}
  
- createTree(document.querySelector('#tree'), food);
+createTree(document.querySelector('#tree'), food);

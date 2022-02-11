@@ -5,3 +5,9 @@
 body {
   background: $c-gray;
 }
+ul > li:hover{
+   font-weight: bold;
+}
+ul > li > ul{
+   font-weight: normal;
+}

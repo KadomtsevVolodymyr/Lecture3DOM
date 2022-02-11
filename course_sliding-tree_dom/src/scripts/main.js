@@ -1,25 +1,16 @@
 'use strict';
 
 const tree = document.querySelector('.tree');
+const allLi = tree.querySelectorAll('li');
 
-for (const li of tree.querySelectorAll('li')) {
-  const span = document.createElement('span');
+for (const li of allLi) {
+  li.classList.add('showOnClick');
 
-  li.prepend(span);
-
-  span.append(span.nextSibling); 
 }
 
-tree.onclick = (hide) => {
-
-  if (hide.target.tagName != 'SPAN') {
-    return;
+tree.addEventListener('click', (hide) => {
+  if (hide.target.children.length > 0){
+    hide.target.children[0].hidden = !hide.target.children[0].hidden;
   }
 
-  const childrenContainer = hide.target.parentNode.querySelector('ul');
-
-  if (!childrenContainer) {
-    return;
-  }
-  childrenContainer.hidden = !childrenContainer.hidden;
-};
+});

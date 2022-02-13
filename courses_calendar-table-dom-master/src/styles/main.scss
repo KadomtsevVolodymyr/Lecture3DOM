@@ -1,0 +1,59 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+
+body {
+  background: $c-gray;
+}
+
+table {
+  border-collapse: collapse;
+  color: $table-color;
+  background-color: white;
+}
+
+td,
+th {
+  border: 1px solid $table-border;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: $background-th;
+  color: white;
+}
+.main{
+   display: flex;
+}
+#earlyMonth{
+   background-color: white;
+   border: 10px solid transparent;
+   border-image: linear-gradient(to right, #0B0E7F , #0B95DD);
+   border-image-slice: 1;
+}
+#nextMonth{
+   background-color: white;
+   border: 10px solid transparent;
+   border-image: linear-gradient(to right, #0B0E7F , #0B95DD);
+   border-image-slice: 1;
+}
+#earlyMonth:hover{
+   cursor: pointer;
+   transition: 3s;
+   content: '';
+   background-color: $hover-bg;
+   border: 10px solid transparent;
+   border-image: linear-gradient(90deg, #f598a8, #f6edb2);
+   border-image-slice: 1;
+}
+#nextMonth:hover{
+   cursor: pointer;
+   transition: 3s;
+   content: '';
+   background-color: $hover-bg;
+   border: 10px solid transparent;
+   border-image: linear-gradient(90deg, #f598a8, #f6edb2);
+   border-image-slice: 1;
+}

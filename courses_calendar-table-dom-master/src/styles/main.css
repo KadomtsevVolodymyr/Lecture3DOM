@@ -1,0 +1,83 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #eee;
+}
+
+table {
+  border-collapse: collapse;
+  color: #113b88;
+  background-color: white;
+}
+
+td,
+th {
+  border: 1px solid #113b88;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #9655fa;
+  color: white;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#earlyMonth {
+  background-color: white;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+     border-image: -webkit-gradient(linear, left top, right top, from(#0B0E7F), to(#0B95DD));
+     border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+  border-image-slice: 1;
+}
+
+#nextMonth {
+  background-color: white;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+     border-image: -webkit-gradient(linear, left top, right top, from(#0B0E7F), to(#0B95DD));
+     border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+  border-image-slice: 1;
+}
+
+#earlyMonth:hover {
+  cursor: pointer;
+  -webkit-transition: 3s;
+  transition: 3s;
+  content: "";
+  background-color: #00aeff;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(90deg, #f598a8, #f6edb2);
+     border-image: -webkit-gradient(linear, left top, right top, from(#f598a8), to(#f6edb2));
+     border-image: linear-gradient(90deg, #f598a8, #f6edb2);
+  border-image-slice: 1;
+}
+
+#nextMonth:hover {
+  cursor: pointer;
+  -webkit-transition: 3s;
+  transition: 3s;
+  content: "";
+  background-color: #00aeff;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(90deg, #f598a8, #f6edb2);
+     border-image: -webkit-gradient(linear, left top, right top, from(#f598a8), to(#f6edb2));
+     border-image: linear-gradient(90deg, #f598a8, #f6edb2);
+  border-image-slice: 1;
+}

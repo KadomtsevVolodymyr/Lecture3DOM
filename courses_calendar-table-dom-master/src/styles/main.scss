@@ -40,19 +40,23 @@ th {
    border-image-slice: 1;
 }
 #earlyMonth:hover{
+   font-size: 20px;
+   color: white;
    cursor: pointer;
-   transition: 3s;
+   transition: 4s;
    content: '';
-   background-color: $hover-bg;
+   background: linear-gradient(red, blue);
    border: 10px solid transparent;
    border-image: linear-gradient(90deg, #f598a8, #f6edb2);
    border-image-slice: 1;
 }
 #nextMonth:hover{
+   color: white;
+   font-size: 20px;
    cursor: pointer;
-   transition: 3s;
+   transition: 4s;
    content: '';
-   background-color: $hover-bg;
+   background: linear-gradient(red, blue);
    border: 10px solid transparent;
    border-image: linear-gradient(90deg, #f598a8, #f6edb2);
    border-image-slice: 1;

@@ -27,7 +27,7 @@ th {
 .main{
    display: flex;
 }
-#earlyMonth{
+#previousMonth{
    background-color: white;
    border: 10px solid transparent;
    border-image: linear-gradient(to right, #0B0E7F , #0B95DD);
@@ -39,7 +39,7 @@ th {
    border-image: linear-gradient(to right, #0B0E7F , #0B95DD);
    border-image-slice: 1;
 }
-#earlyMonth:hover{
+#previousMonth:hover{
    font-size: 20px;
    color: white;
    cursor: pointer;

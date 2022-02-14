@@ -66,7 +66,7 @@ nextMoth.addEventListener('click', () => {
   calendarTable(copyYear, copyMonth, calendar);
 });
 
-const earlyMoth = document.querySelector('#earlyMonth');
+const earlyMoth = document.querySelector('#previousMonth');
 
 earlyMoth.addEventListener('click', () => {
   copyMonth -= 1;
